@@ -1,0 +1,43 @@
+{
+    "name": "بوت ذكاء اصطناعي",
+    "description": "المطور حسين بايروكرام",
+    "logo": "https://telegra.ph/file/29b1fbd85fe347fd9ceca.jpg",
+    "keywords": [
+        "telegram",
+        "bot",
+        "heroku",
+        "app.json",
+        "app",
+        "json",
+        "maker",
+        "generator"
+    ],
+    "repository": "https://github.com/dADXMODd/chatgpt",
+    "website": "https://t.me/UI_XB",
+    "success_url": "https://t.me/UI_XB",
+    "env": {
+        "id": {
+            "description": "ضع ايدي المطور الخاص بك"
+        },
+        "idch": {
+            "description": "ضع ايدي قناة الاشتراك الاجباري الخاصة بك",
+            "required": "False",
+            "value": ""
+        },
+        "token": {
+            "description": "ضع التوكن الخاص بك"
+        }
+    },
+    "stack": "heroku-20",
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "eco"
+        }
+    }
+}
